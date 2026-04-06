@@ -1,0 +1,99 @@
+{
+  "welcome": {
+    "type": "video",
+    "videoUrl": "/nova/videos/welcome.mp4",
+    "subtitle": "Welcome. I'm Nova.",
+    "nextStep": "intent-selection"
+  },
+  "intent-selection": {
+    "type": "video",
+    "videoUrl": "/nova/videos/thinking.mp4",
+    "question": "What brings you here?",
+    "options": [
+      { "label": "Build something new", "value": "build", "nextStep": "project-type" },
+      { "label": "Improve what exists", "value": "improve", "nextStep": "project-type" },
+      { "label": "Just exploring", "value": "explore", "nextStep": "exploration" }
+    ]
+  },
+  "exploration": {
+    "type": "video",
+    "videoUrl": "/nova/videos/acknowledgement.mp4",
+    "subtitle": "Take your time. I'm here when you're ready.",
+    "nextStep": "end"
+  },
+  "project-type": {
+    "type": "video",
+    "videoUrl": "/nova/videos/thinking.mp4",
+    "question": "What type of project?",
+    "options": [
+      { "label": "Website / Web App", "value": "website", "nextStep": "budget" },
+      { "label": "Mobile App", "value": "mobile", "nextStep": "budget" },
+      { "label": "Brand / Design", "value": "brand", "nextStep": "budget" },
+      { "label": "SaaS / Product", "value": "saas", "nextStep": "budget" },
+      { "label": "Something else", "value": "other", "nextStep": "budget" }
+    ],
+    "storeKey": "projectType"
+  },
+  "budget": {
+    "type": "video",
+    "videoUrl": "/nova/videos/thinking.mp4",
+    "question": "What's your budget range?",
+    "options": [
+      { "label": "Under ₹50K", "value": "under-50k", "nextStep": "timeline" },
+      { "label": "₹50K - ₹1L", "value": "50k-1l", "nextStep": "timeline" },
+      { "label": "₹1L - ₹5L", "value": "1l-5l", "nextStep": "timeline" },
+      { "label": "₹5L+", "value": "above-5l", "nextStep": "timeline" },
+      { "label": "Let's discuss", "value": "discuss", "nextStep": "timeline" }
+    ],
+    "storeKey": "budget"
+  },
+  "timeline": {
+    "type": "video",
+    "videoUrl": "/nova/videos/thinking.mp4",
+    "question": "When do you need it?",
+    "options": [
+      { "label": "ASAP", "value": "asap", "nextStep": "contact" },
+      { "label": "Within a month", "value": "month", "nextStep": "contact" },
+      { "label": "1-3 months", "value": "1-3months", "nextStep": "contact" },
+      { "label": "Just planning", "value": "planning", "nextStep": "contact" }
+    ],
+    "storeKey": "timeline"
+  },
+  "contact": {
+    "type": "video",
+    "videoUrl": "/nova/videos/thinking.mp4",
+    "question": "What's your name?",
+    "inputType": "text",
+    "inputPlaceholder": "Your name",
+    "storeKey": "name",
+    "nextStep": "email"
+  },
+  "email": {
+    "type": "video",
+    "videoUrl": "/nova/videos/thinking.mp4",
+    "question": "And your email?",
+    "inputType": "email",
+    "inputPlaceholder": "Your email",
+    "storeKey": "email",
+    "nextStep": "approval"
+  },
+  "approval": {
+    "type": "video",
+    "videoUrl": "/nova/videos/approval.mp4",
+    "subtitle": "Perfect. Let me prepare your summary.",
+    "nextStep": "summary"
+  },
+  "summary": {
+    "type": "completion",
+    "nextStep": "closing"
+  },
+  "closing": {
+    "type": "video",
+    "videoUrl": "/nova/videos/closing.mp4",
+    "subtitle": "I'll be in touch soon.",
+    "nextStep": "end"
+  },
+  "end": {
+    "type": "close"
+  }
+}

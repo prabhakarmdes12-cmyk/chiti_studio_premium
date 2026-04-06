@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova - Adaptive Cinematic Concierge</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      background: #0f0f0f;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container { text-align: center; padding: 40px; }
+    h1 { font-size: 32px; font-weight: 300; margin-bottom: 16px; }
+    p { color: rgba(255,255,255,0.6); margin-bottom: 24px; }
+    .cta {
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Nova</h1>
+    <p>Click the purple sphere in the bottom-right corner</p>
+    <button class="cta" onclick="Nova.open()">Open Nova</button>
+  </div>
+
+  <script src="/nova/nova-embed.js" data-api="/api/lead"></script>
+</body>
+</html>

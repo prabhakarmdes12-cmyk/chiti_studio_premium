@@ -1,0 +1,21 @@
+{
+  "videos": {
+    "welcome": {
+      "file": "welcome.mp4",
+      "status": "exists"
+    },
+    "thinking": {
+      "file": "thinking.mp4",
+      "status": "exists"
+    },
+    "acknowledgement": {
+      "file": "acknowledgement.mp4",
+      "status": "exists"
+    },
+    "closing": {
+      "file": "closing.mp4",
+      "status": "exists"
+    }
+  },
+  "note": "All videos are in place."
+}

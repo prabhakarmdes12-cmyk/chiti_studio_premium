@@ -51,19 +51,21 @@ export default function ConversationEngine() {
 
   // Auto-advance from completion to next step
   useEffect(() => {
-    if (stepData?.type === 'completion' && stepData.nextStep) {
+    if (stepData && stepData.type === 'completion' && stepData.nextStep) {
+      const nextStep = stepData.nextStep;
       const timer = setTimeout(() => {
         // Score the lead and mark complete
         complete('qualified');
-        setStep(stepData.nextStep);
+        setStep(nextStep);
       }, 1500);
       return () => clearTimeout(timer);
     }
   }, [currentStep, stepData]);
 
   const handleVideoComplete = () => {
-    if (stepData?.nextStep && stepData.type === 'video') {
-      setStep(stepData.nextStep);
+    if (stepData && stepData.nextStep && stepData.type === 'video') {
+      const nextStep = stepData.nextStep;
+      setStep(nextStep);
     }
   };
 

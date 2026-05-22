@@ -9,9 +9,9 @@ import { Cpu, BarChart3, Workflow, Database, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const showcaseSlides = [
-  { src: "/case-studies/house-of-giriraj/atlier.mp4",     alt: "Giriraj Atelier",        type: "video" },
-  { src: "/case-studies/house-of-giriraj/collection-hero.mp4", alt: "Giriraj Collections", type: "video" },
-  { src: "/case-studies/ts-aromatics/hero.mp4",           alt: "TS Aromatics",           type: "video" },
+  { src: "/case-studies/house-of-giriraj/curation.mp4",       alt: "Giriraj Curation",  type: "video" },
+  { src: "/case-studies/house-of-giriraj/maharani-viraasat.mp4", alt: "Maharani Viraasat", type: "video" },
+  { src: "/case-studies/house-of-giriraj/raj-tilak.mp4",     alt: "Raj Tilak",          type: "video" },
   { src: "/case-studies/ts-aromatics/hero.png",           alt: "TS Aromatics" },
   { src: "/case-studies/ts-aromatics/coconut-oil.jpg",    alt: "TS Aromatics — Coconut Oil" },
   { src: "/case-studies/house-of-giriraj/hero.png",       alt: "House of Giriraj" },

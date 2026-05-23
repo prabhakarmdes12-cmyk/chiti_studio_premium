@@ -166,7 +166,7 @@ export default function Hero() {
                   {t("tagline")}
                 </span>
               </div>
-              <h1 ref={headlineRef} className="text-on-surface text-[2.75rem] font-extrabold leading-[1.08] tracking-[-0.035em] @[480px]:text-[4rem] font-headline">
+              <h1 ref={headlineRef} className="text-on-surface text-[2.75rem] font-extrabold leading-[1.12] tracking-[-0.025em] @[480px]:text-[4rem] font-headline">
                 {headlineWords}
               </h1>
               <p className="text-on-surface-variant/70 text-[17px] max-w-[480px] leading-[1.65]">

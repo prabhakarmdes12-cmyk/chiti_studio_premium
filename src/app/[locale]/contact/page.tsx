@@ -53,7 +53,7 @@ Project Type: ${activeType}
 Message:
 ${message || "No message provided."}`;
 
-    window.location.href = `mailto:hello@chiti.studio?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:chititech@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -238,10 +238,17 @@ ${message || "No message provided."}`;
                     {t("directContact")}
                   </span>
                   <a
-                    href="mailto:hello@chiti.studio"
+                    href="mailto:chititech@gmail.com"
                     className="text-2xl font-headline font-bold text-on-surface hover:text-primary/80 transition-colors duration-[500ms] relative inline-block group tracking-[-0.02em]"
                   >
-                    hello@chiti.studio
+                    chititech@gmail.com
+                    <span className="absolute bottom-0 left-0 w-0 h-[0.5px] bg-primary/50 group-hover:w-full transition-all duration-[600ms] ease-[var(--ease-out)]" />
+                  </a>
+                  <a
+                    href="tel:+919972934937"
+                    className="text-2xl font-headline font-bold text-on-surface hover:text-primary/80 transition-colors duration-[500ms] relative inline-block group tracking-[-0.02em] mt-2"
+                  >
+                    +91 99729 34937
                     <span className="absolute bottom-0 left-0 w-0 h-[0.5px] bg-primary/50 group-hover:w-full transition-all duration-[600ms] ease-[var(--ease-out)]" />
                   </a>
                 </div>

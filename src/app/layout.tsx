@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Chiti Technologies",
   },
   description:
-    "We build intelligent systems, automation workflows, and scalable digital infrastructure. A premium creative technology collective specializing in UI/UX design, web development, and brand identity.",
+    "We build intelligent systems, automation workflows, and scalable digital infrastructure. A premium creative technology collective specializing in Product Design, web development, and brand identity.",
   keywords: [
     "design studio",
     "UI/UX",

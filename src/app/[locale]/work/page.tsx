@@ -10,21 +10,8 @@ import CTASection from "@/components/sections/CTASection";
 import { caseStudies } from "@/data/case-studies";
 import { useTranslations } from "next-intl";
 
-const filters = [
-  "All Cases",
-  "Web Development",
-  "Product Design",
-  "UI/UX",
-  "B2B",
-  "Luxury",
-  "E-Commerce",
-  "Brand",
-  "CMS",
-  "SaaS",
-];
-
 const projectTags = caseStudies.flatMap((p) => p.tags);
-const uniqueFilters = ["All Cases", ...Array.from(new Set(projectTags))];
+const filters = ["All Cases", ...Array.from(new Set(projectTags))];
 
 export default function WorkPage() {
   const [activeFilter, setActiveFilter] = useState("All Cases");
@@ -71,7 +58,7 @@ export default function WorkPage() {
         <FadeIn delay={0.1}>
           <div className="neon-line mb-10 opacity-15" />
           <div className="flex flex-wrap gap-2.5 mb-20">
-            {(filters.length > 0 ? filters : uniqueFilters).map((filter) => (
+            {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}

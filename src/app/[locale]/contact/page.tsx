@@ -12,10 +12,10 @@ import {
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-const projectTypes = ["New Website", "App UI/UX", "Branding", "Product System"];
+const projectTypes = ["New Website", "App Product Design", "Branding", "Product System"];
 
 export default function ContactPage() {
-  const [activeType, setActiveType] = useState("App UI/UX");
+  const [activeType, setActiveType] = useState("App Product Design");
   const t = useTranslations("contact");
 
   const fitChecks = [

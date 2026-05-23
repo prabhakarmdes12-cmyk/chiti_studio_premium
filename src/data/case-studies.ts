@@ -207,12 +207,12 @@ export const caseStudies: CaseStudy[] = [
     client: "TS Aromatics",
     subtitle:
       "A buyer-facing procurement platform for premium essential oils with a 'Technical Premium' UX — interactive chromatogram, 3D molecular explorer, and deep documentation.",
-    role: "Web Development, UI/UX Design, Technical Architecture",
+    role: "Web Development, Product Design, Technical Architecture",
     year: "2026",
     summary:
       "Built a sensorial B2B procurement platform featuring 127 product pages with GC/MS documentation, 3D molecular visualization, and a full educational academy — all within a heat-reactive interface.",
     category: "B2B Platform",
-    tags: ["Web Development", "UI/UX", "B2B", "E-Commerce", "i18n"],
+    tags: ["Web Development", "Product Design", "B2B", "E-Commerce", "i18n"],
     techStack: [
       "Next.js 16 (App Router, Turbopack)",
       "TypeScript 5",
@@ -656,7 +656,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Bighi Brothers reframed skincare purchasing from a transactional store experience into a guided daily ritual, combining Vedic philosophy with modern minimalism to create an emotionally resonant D2C brand experience.",
     category: "Brand & UX Design",
-    tags: ["UI/UX", "Brand Identity", "Design System", "D2C", "E-Commerce"],
+    tags: ["Interface Design", "Brand Identity", "Design System", "D2C", "E-Commerce"],
     techStack: [
       "Next.js",
       "TypeScript",

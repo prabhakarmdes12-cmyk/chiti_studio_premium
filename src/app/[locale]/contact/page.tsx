@@ -118,7 +118,7 @@ export default function ContactPage() {
         <div className="aurora-blob aurora-blob-1" />
         <div className="aurora-blob aurora-blob-3" />
 
-        <Container size="wide" className="relative z-10 pt-24 pb-16">
+        <Container size="wide" className="relative z-10 pt-20 pb-12">
           <FadeIn direction="none" delay={0.15}>
             <div className="max-w-3xl">
               <span className="text-secondary/70 font-label text-[11px] tracking-[0.25em] uppercase mb-6 block font-medium">
@@ -126,11 +126,11 @@ export default function ContactPage() {
               </span>
               <h1
                 ref={headlineRef}
-                className="text-on-surface text-[2.75rem] md:text-[4.5rem] font-extrabold font-headline tracking-[-0.04em] mb-8 leading-[0.95]"
+                className="text-on-surface text-[1.75rem] md:text-[4.5rem] font-extrabold font-headline tracking-[-0.04em] mb-6 leading-[1.05]"
               >
                 {headlineWords}
               </h1>
-              <p className="text-on-surface-variant/60 text-[17px] md:text-[19px] font-light leading-[1.7] max-w-[520px]">
+              <p className="text-on-surface-variant/60 text-[15px] md:text-[19px] font-light leading-[1.7] max-w-[520px]">
                 {t("heroSubtitle")}
               </p>
             </div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
       </section>
 
       {/* 2. Philosophy — narrative bridge */}
-      <section className="py-24 md:py-32">
+      <section className="py-16 md:py-32">
         <Container size="wide">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[

@@ -246,15 +246,24 @@ export default function Hero() {
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                     className="absolute inset-0"
                   >
-                    <Image
-                      src={project.image}
-                      alt={project.client}
-                      fill
-                      className={`object-cover ${isDesktop ? "ken-burns-in" : ""}`}
-                      style={isDesktop ? { transformOrigin: kenBurnsOrigins[originIndex] } : undefined}
-                      sizes="(max-width: 864px) 100vw, 480px"
-                      unoptimized
-                    />
+                    {project.image.endsWith(".svg") ? (
+                      <img
+                        src={project.image}
+                        alt={project.client}
+                        className={`w-full h-full object-cover ${isDesktop ? "ken-burns-in" : ""}`}
+                        style={isDesktop ? { transformOrigin: kenBurnsOrigins[originIndex] } : undefined}
+                      />
+                    ) : (
+                      <Image
+                        src={project.image}
+                        alt={project.client}
+                        fill
+                        className={`object-cover ${isDesktop ? "ken-burns-in" : ""}`}
+                        style={isDesktop ? { transformOrigin: kenBurnsOrigins[originIndex] } : undefined}
+                        sizes="(max-width: 864px) 100vw, 480px"
+                        unoptimized
+                      />
+                    )}
                   </motion.div>
                 </AnimatePresence>
 

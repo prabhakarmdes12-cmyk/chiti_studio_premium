@@ -215,7 +215,7 @@ export default function Hero() {
         </div>
 
         <FadeIn direction="right" delay={0.25} duration={1.2}>
-          <div className="relative w-full @[864px]:w-[480px] @[864px]:h-[480px] min-h-[280px] @[480px]:min-h-[340px] @[864px]:min-h-0">
+          <div className="relative w-full @[864px]:w-[480px] @[864px]:h-[480px] h-[280px] @[480px]:h-[340px] @[864px]:min-h-0 overflow-hidden">
             <div
               className="absolute -inset-20 bg-gradient-to-tr from-primary/20 via-secondary/15 to-tertiary/10 blur-[120px] rounded-full"
               style={{ animation: "drift 20s ease-in-out infinite alternate" }}

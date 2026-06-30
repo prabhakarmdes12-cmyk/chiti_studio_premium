@@ -10,6 +10,7 @@ import FadeIn from "@/components/FadeIn";
 import Button from "@/components/Button";
 import { Badge, Modal } from "@chiti/ui";
 import CTASection from "@/components/sections/CTASection";
+import PasswordGate from "@/components/PasswordGate";
 import { caseStudies, orderedCaseStudies } from "@/data/case-studies";
 import {
   ArrowLeft,
@@ -36,6 +37,9 @@ export default function CaseStudyClient() {
     caption: string;
   } | null>(null);
   const t = useTranslations("work");
+  const [unlocked, setUnlocked] = useState(
+    typeof window !== "undefined" && sessionStorage.getItem("cs_unlocked") === "true"
+  );
 
   const currentIndex = orderedCaseStudies.findIndex((c) => c.slug === slug);
   const prevProject =
@@ -57,6 +61,17 @@ export default function CaseStudyClient() {
           </Button>
         </div>
       </Container>
+    );
+  }
+
+  if (!unlocked) {
+    return (
+      <PasswordGate
+        onUnlocked={() => {
+          sessionStorage.setItem("cs_unlocked", "true");
+          setUnlocked(true);
+        }}
+      />
     );
   }
 
